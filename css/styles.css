@@ -1,0 +1,65 @@
+* {
+    font-family: "Merriweather", sans-serif;
+}
+
+/********
+Header
+*********/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: -10px;
+    font-size: large;
+    text-transform: uppercase;
+    background-color: rgb(51, 68, 95);
+    color: white;
+    padding: 20px;
+}
+
+header h2 {
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 10px;
+    color: rgb(51, 68, 95);
+    font-size: medium;
+}
+
+header p {
+    margin-top: 0px;
+    padding: 0px 20px 20px 20px;
+    font-size: small;
+    color: rgb(194, 194, 194);
+}
+
+.hr1 {
+    border-bottom: 7px double rgb(51, 68, 95);
+}
+
+/********
+Main
+*********/
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-bottom: 20px
+}
+
+input, select{
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+}

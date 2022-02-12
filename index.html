@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>The Code Review</title>
 </head>
 <body>
     <header class="header">
-        <h1>The Code Review</h1>
+        <h1>the code review</h1>
         <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
-            <hr>
+            <hr class="hr1">
     </header>
 
     <main>
@@ -41,6 +45,7 @@
                     <div>
                         <label for="state">State</label>
                         <select name="state" id="state">
+                            <option value="" hidden>Choose State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -98,26 +103,38 @@
                         <label for="zip">Zip Code</label>
                         <input type="text" id="zip" name="zip" placeholder="Zip Code">
                     </div>
+                    <hr class="hr2">
             </fieldset>
-                <hr>
+
+                
 
             <fieldset>
                 <legend>Newsletter</legend>
                     <div>
                         <p>Select the newsletters you would like to receive</p>
-                            <label for="news1">HTML News</label>
-                            <input type="checkbox" id="news1" name="news1" value="HTML">
-                            <label for="news2">CSS News</label>
-                            <input type="checkbox" id="news2" name="news2" value="CSS">
-                            <label for="news3">JavaScript News</label>
-                            <input type="checkbox" id="news3" name="news3" value="JavaScript">
+                            <div>
+                                <input type="checkbox" id="news1" name="news1" value="HTML">
+                                <label for="news1">HTML News</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="news2" name="news2" value="CSS">
+                                <label for="news2">CSS News</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="news3" name="news3" value="JavaScript">
+                                <label for="news3">JavaScript News</label>
+                            </div>
                     </div>
                     <div>
                         <p>Newsletter Format</p>
-                        <label for="news_format1">HTML</label>
-                        <input type="radio" id="news_format1" name="news_format" value="HTML">
-                        <label for="news_format2">Plain Text</label>
-                        <input type="radio" id="news_format2" name="news_format" value="Plain">
+                        <div>
+                            <input type="radio" id="news_format1" name="news_format" value="HTML">
+                            <label for="news_format1">HTML</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="news_format2" name="news_format" value="Plain">
+                            <label for="news_format2">Plain Text</label>
+                        </div>
                     </div>    
             </fieldset>
 
@@ -131,5 +148,9 @@
             <input type="submit" value="Sign Up">
         </form>
     </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
 </body>
 </html>
