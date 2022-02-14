@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     font-family: "Merriweather", sans-serif;
 }
 
@@ -42,9 +43,7 @@ Main
 *********/
 
 form {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: inline-block;
     padding-top: 15px;
 }
 
@@ -52,14 +51,45 @@ fieldset {
     border: none;
 }
 
-legend {
-    padding-bottom: 20px
+fieldset p {
+    color: rgb(135, 142, 158);
 }
 
-input, select{
-    margin-bottom: 15px;
+.legend {
+    padding-bottom: 20px;
+    color: rgb(51, 68, 95);
+    font-size: medium;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=tel], select {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0 15px 0;
+    background-color: rgb(243, 243, 243);
+}
+
+select {
+    font-style: italic;
+    color: rgb(170, 170, 170);
 }
 
 label {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    color: rgb(149, 155, 170);
 }
+
+::placeholder {
+    font-style: italic;
+    text-align: right;
+    color: rgb(128, 128, 128);
+}
+
+textarea {
+    resize: none;
+}
+
+
+

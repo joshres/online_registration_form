@@ -21,7 +21,7 @@
     <main>
         <form>
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend class="legend">Contact Information</legend>
                     <div>
                         <label for="fname">Full Name</label>
                         <input type="text" id="fname" name="fname" placeholder="Required" required>
@@ -109,7 +109,7 @@
                 
 
             <fieldset>
-                <legend>Newsletter</legend>
+                <legend class="legend">Newsletter</legend>
                     <div>
                         <p>Select the newsletters you would like to receive</p>
                             <div>
@@ -139,9 +139,10 @@
             </fieldset>
 
             <fieldset>
-                <p>Other topics you'd like to hear about</p>
+                <!-- <p>Other topics you'd like to hear about</p> -->
                     <div>
-                        <textarea placeholder="Enter text here"></textarea>
+                        <label for="user_response">Other topics you'd like to hear about</label>
+                        <textarea id="user_response" name="user_response" placeholder="Enter text here"></textarea>
                     </div>
             </fieldset>
             
