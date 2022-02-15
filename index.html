@@ -21,7 +21,7 @@
     <main>
         <form>
             <fieldset>
-                <legend class="legend">Contact Information</legend>
+                <legend class="legend_1">Contact Information</legend>
                     <div>
                         <label for="fname">Full Name</label>
                         <input type="text" id="fname" name="fname" placeholder="Required" required>
@@ -109,29 +109,29 @@
                 
 
             <fieldset>
-                <legend class="legend">Newsletter</legend>
+                <legend class="legend_2">Newsletter</legend>
                     <div>
                         <p>Select the newsletters you would like to receive</p>
-                            <div>
+                            <div class="newsletter">
                                 <input type="checkbox" id="news1" name="news1" value="HTML">
                                 <label for="news1">HTML News</label>
                             </div>
-                            <div>
+                            <div class="newsletter">
                                 <input type="checkbox" id="news2" name="news2" value="CSS">
                                 <label for="news2">CSS News</label>
                             </div>
-                            <div>
+                            <div class="newsletter">
                                 <input type="checkbox" id="news3" name="news3" value="JavaScript">
                                 <label for="news3">JavaScript News</label>
                             </div>
                     </div>
                     <div>
-                        <p>Newsletter Format</p>
-                        <div>
+                        <p class="radio_p">Newsletter Format</p>
+                        <div class="newsletter">
                             <input type="radio" id="news_format1" name="news_format" value="HTML">
                             <label for="news_format1">HTML</label>
                         </div>
-                        <div>
+                        <div class="newsletter">
                             <input type="radio" id="news_format2" name="news_format" value="Plain">
                             <label for="news_format2">Plain Text</label>
                         </div>
@@ -139,14 +139,13 @@
             </fieldset>
 
             <fieldset>
-                <!-- <p>Other topics you'd like to hear about</p> -->
                     <div>
                         <label for="user_response">Other topics you'd like to hear about</label>
-                        <textarea id="user_response" name="user_response" placeholder="Enter text here"></textarea>
+                        <textarea id="user_response" name="user_response" placeholder="Enter text here" rows="5"></textarea>
                     </div>
             </fieldset>
             
-            <input type="submit" value="Sign Up">
+            <input type="submit" id="submit" value="Sign Up">
         </form>
     </main>
 
