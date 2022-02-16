@@ -45,6 +45,7 @@ Main
 form {
     display: inline-block;
     padding-top: 15px;
+    background-color: aliceblue;
 }
 
 fieldset {
@@ -78,13 +79,27 @@ fieldset p {
     font-weight: bold;
 }
 
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus {
+    background: rgb(253, 253, 198);
+    transition: .5s ease-out;
+}
+
+select:focus {
+    background: rgb(253, 253, 198);
+}
+
 input[type=text], input[type=email], input[type=tel], select {
+    display: block;
     border: none;
     border-radius: 3px;
     width: 100%;
     padding: 15px 20px;
     margin: 10px 0 15px 0;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(236, 236, 236);
+}
+
+#zip {
+    max-width: 50%;
 }
 
 select {
@@ -126,7 +141,7 @@ textarea {
     border: none;
     border-radius: 3px;
     color: rgb(51, 68, 95);
-    background-color: rgb(243, 223, 43);
+    background-color: rgb(247, 231, 89);
     font-weight: bold;
 }
 
@@ -141,3 +156,38 @@ footer {
     font-size: small;
     color: rgb(177, 177, 177)
 }
+
+/********
+Media Queries
+*********/
+
+@media (min-width: 768px) {
+    .contact-fieldset div {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+    .contact-fieldset input,
+    .contact-fieldset select {
+      flex-basis: 75%;
+    }
+    .contact-fieldset label {
+      flex-basis: 25%;
+    }
+    #zip {
+      max-width: 25%;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    fieldset {
+        text-align: left;
+    }
+
+    header h2, header p, .hr1, form, footer {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+  }
